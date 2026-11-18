@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lost n Found - Item Details</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    header {
+      padding: 12px 16px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      margin-right: 12px;
+    }
+
+    nav .nav-right a {
+      margin-right: 0;
+      margin-left: 12px;
+    }
+
+    main {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    #item-images img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: contain;
+      margin-bottom: 12px;
+    }
+
+    .item-info {
+      margin: 16px 0;
+    }
+
+    #found-button {
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    #message {
+      margin-top: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 16px;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>lostnfound</h1>
+
+    <nav>
+      <div class="nav-left">
+        <a href="add.html">add</a>
+        <a href="search.html">search</a>
+      </div>
+
+      <div class="nav-right">
+        <a href="logout.html">logout</a>
+        <a href="mypage.html">mypage</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="item-detail">
+      <h2>Item Details</h2>
+
+      <div id="item-images">
+        <!-- Item images will be displayed here -->
+      </div>
+
+      <h3 id="item-name">Item Name</h3>
+
+      <div class="item-info">
+        <strong>Category:</strong>
+        <span id="item-category"></span>
+      </div>
+
+      <div class="item-info">
+        <strong>Description:</strong>
+        <p id="item-description"></p>
+      </div>
+
+      <div class="item-info">
+        <strong>Date Posted:</strong>
+        <span id="item-date"></span>
+      </div>
+
+      <div class="item-info">
+        <strong>Pickup Method:</strong>
+        <span id="pickup-method"></span>
+      </div>
+
+      <button type="button" id="found-button">
+        Found
+      </button>
+
+      <p id="message"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Gitastic5. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
